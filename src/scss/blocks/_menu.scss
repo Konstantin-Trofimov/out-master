@@ -1,0 +1,29 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%; 
+    width: 170px;
+    height: 400px;   
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .6s;
+    &.active {
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+    &__block {
+        position: relative;
+        height: 100%;
+        background: rgb(30,31,34);;
+        transition: all .6s;
+        z-index: 10;
+    }
+    &__close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }  
+}    

@@ -1,0 +1,48 @@
+.header {
+    min-height: 85px;
+    position: relative;
+    &__wrapper {
+        padding: 48px 77px 0 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+   
+    &__title {
+        align-self: start;
+        margin-top: 11px;
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 0;
+    }
+
+    &__menu {
+        align-self: end;
+        min-width: 403px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      
+        
+        &-link {
+            color: #ffffff;
+            font-family: Play;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        &-search {
+            transition: all .5s;
+
+            &:hover {
+                opacity: .5;
+            }
+        }
+
+        &-search {
+            cursor: pointer;
+        }
+    }
+}
