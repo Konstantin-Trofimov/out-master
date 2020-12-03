@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    margin-top: 598px;
+    // margin-top: 598px;
     min-height: 164px;
     display: -ms-flexbox;
     &__wrapper {
@@ -35,8 +35,19 @@
         display: flex;
         flex-direction: column;
 
+        &-link {
+            display: block;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            
+            &:hover {
+                opacity: 1;
+            }
+        }
+
         &-btn {
-            min-width: 285px;
             height: 82px;
             border: none;
             background-color: #BAB7B7;

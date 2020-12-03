@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval(" // import  from './modules/';\n// import  from './modules/';\n// import  from './modules/';\n// import  from './modules/';\n// import  from './modules/';\n\nwindow.addEventListener('DOMContentLoaded', function () {\n  var hamburger = document.querySelector('.left-menu'),\n      wrap = document.querySelector('.header__wrapper'),\n      menu = document.querySelector('.menu'),\n      closeElem = document.querySelector('.menu__close');\n  hamburger.addEventListener('click', function () {\n    menu.classList.add('active');\n    wrap.classList.add('shift');\n  });\n  closeElem.addEventListener('click', function () {\n    menu.classList.remove('active');\n    wrap.classList.remove('shift');\n  });\n});\n\n//# sourceURL=webpack:///./src/js/script.js?");
+eval(" // import  from './modules/';\n// import  from './modules/';\n// import  from './modules/';\n// import  from './modules/';\n// import  from './modules/';\n\nwindow.addEventListener('DOMContentLoaded', function () {\n  var hamburger = document.querySelector('.left-menu'),\n      menu = document.querySelector('.menu'),\n      closeElem = document.querySelector('.menu__close');\n  hamburger.addEventListener('click', function () {\n    menu.classList.add('active');\n  });\n  closeElem.addEventListener('click', function () {\n    menu.classList.remove('active');\n  });\n});\n\n//# sourceURL=webpack:///./src/js/script.js?");
 
 /***/ })
 

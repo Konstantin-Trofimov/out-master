@@ -3,16 +3,18 @@
     top: 0;
     left: -100%; 
     width: 170px;
-    height: 400px;   
+    height: 440px;   
     z-index: 10;
     visibility: hidden;
     opacity: 0;
     transition: all .6s;
+
     &.active {
         left: 0;
         visibility: visible;
         opacity: 1;
     }
+
     &__block {
         position: relative;
         height: 100%;
@@ -20,10 +22,28 @@
         transition: all .6s;
         z-index: 10;
     }
+
     &__close {
         position: absolute;
         top: 25px;
         right: 25px;
         cursor: pointer;
+        &:hover {
+            opacity: .5;
+        }
     }  
+
+    nav {
+        height: 100%;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding: 60px 0 40px 0;
+    }
+
 }    

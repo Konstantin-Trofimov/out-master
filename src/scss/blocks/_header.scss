@@ -33,16 +33,5 @@
             font-weight: 400;
         }
 
-        &-search {
-            transition: all .5s;
-
-            &:hover {
-                opacity: .5;
-            }
-        }
-
-        &-search {
-            cursor: pointer;
-        }
     }
 }

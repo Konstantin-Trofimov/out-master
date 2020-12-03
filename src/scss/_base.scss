@@ -1,5 +1,7 @@
 html { 
     min-height: 100%; 
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 * {
@@ -18,9 +20,9 @@ li {
     list-style-type: none;
 }
 
-.container {
-    max-width: 1580px;
-    margin: auto;
+.wrapper {
+    min-height: 100%; 
+    background: url('../img/bg.png') center (center/cover) no-repeat;  
 }
 
 .hide {
@@ -53,12 +55,23 @@ button {
 }
 
 body {
-    min-height: 100%; 
-    background: url('../img/bg.png') center (center/cover) no-repeat;   
+    height: 100vh;
 }
 
-header, footer, nav {
+header, footer, nav, section {
     display: block;
+}
+
+#gtx-trans {
+    z-index: -1 !important;
+    display: none !important;
+}
+
+.content {
+    padding-top: 150px;
+    font-size: 26px;
+    color: #FFF;
+    text-align: center;
 }
 
 
