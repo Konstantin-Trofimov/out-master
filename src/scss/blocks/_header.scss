@@ -2,16 +2,21 @@
     min-height: 85px;
     position: relative;
     &__wrapper {
-        padding: 48px 77px 0 180px;
+        padding: 51px 171px 0 180px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        nav {
+            position: relative;
+        }
     }
    
     &__title {
         align-self: start;
-        margin-top: 11px;
+        margin-top: 9px;
         color: #ffffff;
+        // color: green;
         font-size: 22px;
         font-weight: 400;
         text-transform: uppercase;
@@ -19,16 +24,22 @@
     }
 
     &__menu {
+        position: relative;
         align-self: end;
-        min-width: 403px;
+        min-width: 309px;
+        // margin-right: 97px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        transition: all .9s;
+
+        &_shift {
+            margin-right: 275px;
+        }
       
         
         &-link {
             color: #ffffff;
-            font-family: Play;
             font-size: 18px;
             font-weight: 400;
         }

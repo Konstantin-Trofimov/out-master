@@ -41,13 +41,14 @@
             display: flex;
             justify-content: center;
             align-items: center; 
-            
+
             &:hover {
                 opacity: 1;
             }
         }
 
         &-btn {
+            min-width: 285px;
             height: 82px;
             border: none;
             background-color: #BAB7B7;

@@ -1,0 +1,66 @@
+
+.search {
+    position: absolute;
+    top: 59px;
+    right: 38px;
+    transform: translate(-50%, -50%);
+
+    &__wrapper{
+        width: 0px;
+        height: 50px;
+        text-align: center;
+        line-height: 45px;
+        padding-right: 50px;
+        transition: all 0.5s ease;
+        border-radius: 5px;
+    }
+
+    &__input{
+        border: 0px;
+        border-bottom: 2px solid #fff;
+        background: transparent;
+        width: 0%;
+        padding: 5px 0;
+        outline: none;
+        color: #fff;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    &__wrapper .loupe {
+        color: #ffffff;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    &__wrapper.loupe_active{
+        width: 250px;
+        padding-left: 25px;
+        transition: all 0.5s ease;
+    }
+
+    &__wrapper.loupe_active, &__wrapper.loupe_active{
+        background: #41484aca;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    &__input.loupe_active{
+        width: 98%;
+        padding-left: 5px;
+        transition: all 0.5s 0.8s ease;
+    }
+
+    &__input::placeholder {
+        color: #fff;
+    }
+
+    &_shift {
+        top: 65px;
+        right: 0px;
+    }
+}

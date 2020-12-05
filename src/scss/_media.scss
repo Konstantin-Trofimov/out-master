@@ -21,7 +21,6 @@
 }
 
 @media (max-width: 1200px) {
-    
     .footer {
         &__nav {
             padding: 72px 44px 0 37px;
@@ -29,22 +28,55 @@
     }
 }
 
-@media (max-width: 992px) {
-    
+@media (max-width: 1100px) {
     .header {
-        &__wrapper {
-            padding-right: 20px;
-        }   
+        &__menu {
+            &_shift {
+                display: none;
+            }
+        }
     }
+}
 
+
+@media (max-width: 992px) {
     .footer {
         &__wrapper {
-            grid-template-columns: auto 145px;
+            grid-template-columns: none
         }
         &__nav {
+            padding: 50px;
+
             ul {
                 min-width: unset;
             } 
+        }
+        &__info {
+            &-btn {
+                min-width: auto;
+            }
+        } 
+    }
+}
+
+@media (max-width: 835px) {
+    .header {
+        &__menu {
+            display: none;
+        }
+    }
+
+    .content {
+        padding-top: 162px;
+    }
+    
+}
+
+@media (max-width: 811px) {
+    .search {
+        top: 65px;;
+        &_shift {
+            top: 65px;
         }
     }
 }
@@ -60,41 +92,27 @@
             align-self: center;
         }
         &__menu {
-            display: none;
-
             &-link {
                 font-size: 26px;
             }
-
-            :nth-child(4) {
-                display: none;
-            }
         }     
+    }
+
+    .search {
+        display: none;
     }
 
     .footer {
         position: fixed;
         bottom: 0;
         margin-top: 45px;
+
         &__wrapper {
             display: block;
         }
-        &__nav {
-            padding: 0;
-            height: 260px;
-            ul {
-                height: 100%;
-                flex-direction: column;
-                justify-content: space-evenly;
-                
-                :nth-child(2) {
-                    margin-left: 0;
-                }
-            }
 
-            &-link {
-                font-size: 26px;
-            }
+        &__nav {
+            display: none;
         }  
 
         &__info {
@@ -116,16 +134,26 @@
 
 }
 
-@media (max-width: 688px) {
-
+@media (max-height: 450px) and (max-width: 500px) {
     .footer {
         &__nav {
             display: none;
-            padding: 40px;
-            height: 360px;
-            ul {
-                justify-content: space-between;
-            }    
+        }
+    }
+
+    .content {
+        min-height: 0;
+    }
+
+    .menu {
+        height: 100%;  
+    }
+}
+
+@media (max-width: 688px)  {
+    .footer {
+        &__nav {
+            display: none;
         }   
     }
 
@@ -143,6 +171,12 @@
             }
         }
     }
+    
+}
 
+@media (max-height: 375px) {
+    .menu {
+        height: 100%;
+    }
 }
 
